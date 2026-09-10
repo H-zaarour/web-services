@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries | PixelPioneers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Pixel<span>Pioneers</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="offer.html">Special Offer ($350)</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <h1 style="margin-bottom: 8px;">Let's Discuss Your Project</h1>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">
+            Prefer a quick direct chat or want to send detailed specifications? Choose your preferred method below.
+          </p>
+
+          <!-- WhatsApp Direct Action Button -->
+          <div style="margin-bottom: 28px;">
+            <a href="https://wa.me/96179415376?text=Hello!%20I'd%20like%20to%20inquire%20about%20your%20software%20and%20web%20services." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-whatsapp" 
+               style="width: 100%;">
+              <svg viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              Chat Directly on WhatsApp
+            </a>
+            <div style="display: flex; align-items: center; margin-top: 18px;">
+              <div style="flex: 1; height: 1px; background: var(--border);"></div>
+              <span style="padding: 0 12px; color: var(--text-muted); font-size: 0.85rem;">or send message via form</span>
+              <div style="flex: 1; height: 1px; background: var(--border);"></div>
+            </div>
+          </div>
+
+          <!-- Email Inquiry Form -->
+          <form action="https://formspree.io/f/myeylvad" method="POST">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp Number (Optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+961 70 000 000">
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Interested In</label>
+              <select id="serviceType" name="service" required>
+                <option value="tier-350" selected>5-Page Website Package ($350 Flat)</option>
+                <option value="custom-web">Custom Web Application</option>
+                <option value="mobile">Cross-Platform Mobile App</option>
+                <option value="booking">On-Demand / Booking Software</option>
+                <option value="consulting">Code Review & Technical Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Outline or Target Pages</label>
+              <textarea id="message" name="message" rows="5" placeholder="List the pages you need (e.g., Home, About, Services...), any features, or reference links..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; padding: 14px;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/96179415376?text=Hello!%20I'm%20visiting%20your%20website%20and%20would%20like%20to%20chat." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     title="Direct WhatsApp Chat">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 ApexDev. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
