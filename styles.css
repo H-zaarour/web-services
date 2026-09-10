@@ -374,3 +374,9 @@ footer {
     gap: 12px;
   }
 }
+a.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
